@@ -1,0 +1,231 @@
+/**
+ * CSS - Online Registration Form Project 3
+ */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	margin: 0 auto;
+	background-color: white;
+	font-family: 'Merriweather', serif;
+	color: #444444;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
+h1 {
+	color: white;
+}
+
+/* || Base Styles  */
+#main-header h1 {
+	font-size: 1.6em;
+	/* text-shadow: -3px 3px 4px rgb(45 44 44 / 75%); */
+	/* text-shadow: 0px 3px 0px #444444, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1),
+		0px 34px 30px rgba(0, 0, 0, 0.1); */
+	text-shadow: 1px 3px 0px #3e6518, 4px 3px 8px rgb(97 144 42), 4px 11px 4px rgb(95 138 45),
+		0px 20px 30px rgb(102 146 51);
+}
+
+#main-wrapper {
+	margin: 0 auto;
+	background-color: #fdfcf7;
+}
+.top .flex-group {
+	display: flex;
+	flex-direction: column;
+}
+.intro {
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#main-wrapper h2 {
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 40px;
+}
+.intro p {
+	color: #a09e9e;
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: 200;
+}
+#main-header {
+	background-image: linear-gradient(
+		324deg,
+		rgba(103, 154, 44, 1) 0%,
+		rgba(105, 154, 49, 1) 35%,
+		rgba(205, 254, 148, 1) 100%
+	);
+	min-width: 100%;
+	height: 100px;
+	text-align: center;
+	padding: 10px 20px;
+}
+.hr-double-border {
+	border-top: 4px solid black;
+	padding-top: 2px;
+	border-bottom: 1px solid #000;
+	max-width: 90%;
+}
+.hr-single-border {
+	max-width: 90%;
+	border: 1px solid black;
+}
+fieldset {
+	border-style: none;
+}
+fieldset p,
+footer p {
+	color: #a09e9e;
+	font-size: 0.9em;
+	font-weight: 200;
+}
+footer p {
+	text-align: center;
+	font-style: italic;
+}
+.legend-headings {
+	border-style: none;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.top input,
+select {
+	display: block;
+	width: 100%;
+	height: 50px;
+	margin: 12px 0;
+	padding: 10px;
+	border: none;
+	/* background-color: #f7f7f7; */
+	background-color: #ececec;
+}
+textarea {
+	display: block;
+	width: 100%;
+	margin: 12px 0;
+	padding: 10px;
+	border: none;
+	/* background-color: #f7f7f7; */
+	background-color: #ececec;
+}
+input:focus,
+textarea:focus {
+	background-color: khaki;
+	transition: .8s;
+	border: solid 2px tomato;
+}
+/* fix for default autocomplete input fields background colors found on https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/ */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	border: 2px solid rgb(243, 162, 10);
+	-webkit-text-fill-color: black;
+	-webkit-box-shadow: 0 0 0px 1000px #e6f1bc inset;
+	transition: background-color 5000s ease-in-out 0s;
+}
+/* End of fix */
+select {
+	font-size: 0.8em;
+	color: #9b9a9a;
+}
+label {
+	display: block;
+	color: #808080;
+	font-weight: 100;
+	font-size: 0.9em;
+}
+#zip {
+	max-width: 50%;
+}
+::placeholder {
+	text-align: right;
+	font-size: 0.8em;
+	color: #9b9a9a;
+	font-style: italic;
+}
+.checkbox,
+.radiobutton {
+	height: 30px;
+}
+input[type='checkbox'],
+input[type='radio'] {
+	float: left;
+	width: 20px;
+	margin: 0 10px 0 0;
+}
+.text-area {
+	margin-top: 20px;
+}
+button {
+	width: 100%;
+	height: 60px;
+	border-radius: 5px;
+	border: none;
+	background-color: #7dae45;
+	box-shadow: 1px 2px 5px 1px rgb(0 0 43 / 50%);
+	color: white;
+	font-size: 1.2em;
+}
+button:focus {
+	background-color: rgb(64, 140, 190);
+	color: white;
+}
+button:hover {
+	background-color: #a5ce76;
+	box-shadow: 1px 2px 5px 1px rgb(76 80 37);
+	transition: 0.5s;
+	cursor: pointer;
+	color: #3c3b3b;
+}
+button: footer {
+	margin-bottom: 150px;
+}
+
+/**
+ * MEDIA QUERIES
+ */
+@media (min-width: 768px) {
+	#main-wrapper {
+		max-width: 768px;
+		padding: 50px 50px 50px 50px;
+	}
+	.hr-double-border,
+	.hr-single-border {
+		max-width: 100%;
+	}
+	.top .flex-group {
+		flex-direction: row;
+	}
+	.intro p {
+		margin-bottom: 50px;
+	}
+	.top label {
+		flex-basis: 25%;
+		height: 50px;
+		margin: auto 0;
+	}
+	.top input,
+	.top select {
+		flex-grow: 1;
+		flex-basis: 75%;
+	}
+	#zip {
+		max-width: 25%;
+	}
+}
