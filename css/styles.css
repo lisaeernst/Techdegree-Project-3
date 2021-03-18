@@ -204,6 +204,8 @@ button: footer {
 	#main-wrapper {
 		max-width: 768px;
 		padding: 50px 50px 50px 50px;
+		border-left: 2px solid #e0e0e094;
+		border-right: 2px solid #e0e0e094;
 	}
 	.hr-double-border,
 	.hr-single-border {
