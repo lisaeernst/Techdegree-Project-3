@@ -22,6 +22,7 @@ h1 {
 }
 
 /* || Base Styles  */
+
 #main-header h1 {
 	font-size: 1.6em;
 	text-shadow: 1px 3px 0px #3e6518, 4px 3px 8px rgb(97 144 42), 4px 11px 4px rgb(95 138 45),
@@ -31,7 +32,7 @@ h1 {
 .main-wrapper {
 	margin: 0 auto;
 	background-color: #fdfcf7;
-	/* border: solid 1px #fdfcf7; */ /* fixes the collapsed margins between main-wrapper and header */
+	border: solid 1px #fdfcf7; /* fixes the collapsed margins between main-wrapper and header */
 }
 .top .flex-group {
 	display: flex;
