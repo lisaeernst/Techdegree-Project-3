@@ -120,7 +120,7 @@ textarea {
 	background-color: #ececec;
 }
 input:focus,
-textarea:focus {
+textarea:focus select:focus {
 	background-color: khaki;
 	border: solid 2px tomato;
 }
