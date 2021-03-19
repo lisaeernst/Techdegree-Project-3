@@ -24,16 +24,14 @@ h1 {
 /* || Base Styles  */
 #main-header h1 {
 	font-size: 1.6em;
-	/* text-shadow: -3px 3px 4px rgb(45 44 44 / 75%); */
-	/* text-shadow: 0px 3px 0px #444444, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1),
-		0px 34px 30px rgba(0, 0, 0, 0.1); */
 	text-shadow: 1px 3px 0px #3e6518, 4px 3px 8px rgb(97 144 42), 4px 11px 4px rgb(95 138 45),
 		0px 20px 30px rgb(102 146 51);
 }
 
-#main-wrapper {
+.main-wrapper {
 	margin: 0 auto;
 	background-color: #fdfcf7;
+	/* border: solid 1px #fdfcf7; */ /* fixes the collapsed margins between main-wrapper and header */
 }
 .top .flex-group {
 	display: flex;
@@ -44,7 +42,7 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 }
-#main-wrapper h2 {
+.main-wrapper h2 {
 	font-size: 1.2em;
 	text-align: center;
 	margin-top: 40px;
@@ -106,7 +104,6 @@ select {
 	margin: 12px 0;
 	padding: 10px;
 	border: none;
-	/* background-color: #f7f7f7; */
 	background-color: #ececec;
 }
 .top input {
@@ -119,7 +116,6 @@ textarea {
 	padding: 10px;
 	border: none;
 	transition: .8s;
-	/* background-color: #f7f7f7; */
 	background-color: #ececec;
 }
 input:focus,
@@ -128,7 +124,7 @@ textarea:focus {
 	border: solid 2px tomato;
 }
 /* fix for default autocomplete input fields background colors found on https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/ */
-input:-webkit-autofill,
+/* input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
@@ -141,8 +137,8 @@ select:-webkit-autofill:focus {
 	-webkit-text-fill-color: black;
 	-webkit-box-shadow: 0 0 0px 1000px #e6f1bc inset;
 	transition: background-color 5000s ease-in-out 0s;
-}
-/* End of fix */
+} */
+/* End of fix for autocomplete issue  */
 select {
 	font-size: 0.8em;
 	color: #9b9a9a;
@@ -196,7 +192,7 @@ button:hover {
 	cursor: pointer;
 	color: #3c3b3b;
 }
-button: footer {
+button footer {
 	margin-bottom: 150px;
 }
 
@@ -204,11 +200,11 @@ button: footer {
  * MEDIA QUERIES
  */
 @media (min-width: 768px) {
-	#main-wrapper {
+	.main-wrapper {
 		max-width: 768px;
 		padding: 50px 50px 50px 50px;
-		border-left: 2px solid #e0e0e094;
-		border-right: 2px solid #e0e0e094;
+		/* border-left: 2px solid #e0e0e094;
+		border-right: 2px solid #e0e0e094; */
 	}
 	.hr-double-border,
 	.hr-single-border {
