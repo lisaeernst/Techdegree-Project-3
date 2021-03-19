@@ -32,7 +32,7 @@ h1 {
 .main-wrapper {
 	margin: 0 auto;
 	background-color: #fdfcf7;
-	border: solid 1px #fdfcf7; /* fixes the collapsed margins between main-wrapper and header */
+	border-top: solid 1px #fdfcf7; /* fixes the collapsed margins between main-wrapper and header */
 }
 .top .flex-group {
 	display: flex;
@@ -124,22 +124,6 @@ textarea:focus {
 	background-color: khaki;
 	border: solid 2px tomato;
 }
-/* fix for default autocomplete input fields background colors found on https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/ */
-/* input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-	border: 2px solid rgb(243, 162, 10);
-	-webkit-text-fill-color: black;
-	-webkit-box-shadow: 0 0 0px 1000px #e6f1bc inset;
-	transition: background-color 5000s ease-in-out 0s;
-} */
-/* End of fix for autocomplete issue  */
 select {
 	font-size: 0.8em;
 	color: #9b9a9a;
@@ -204,8 +188,9 @@ button footer {
 	.main-wrapper {
 		max-width: 768px;
 		padding: 50px 50px 50px 50px;
-		/* border-left: 2px solid #e0e0e094;
-		border-right: 2px solid #e0e0e094; */
+		border-left: 2px solid #f5f4f494;
+		border-right: 2px solid #f5f4f494;
+		border-bottom: 2px solid #f5f4f494;
 	}
 	.hr-double-border,
 	.hr-single-border {
