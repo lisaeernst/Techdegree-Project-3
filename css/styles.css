@@ -109,19 +109,22 @@ select {
 	/* background-color: #f7f7f7; */
 	background-color: #ececec;
 }
+.top input {
+	transition: .8s;
+}
 textarea {
 	display: block;
 	width: 100%;
 	margin: 12px 0;
 	padding: 10px;
 	border: none;
+	transition: .8s;
 	/* background-color: #f7f7f7; */
 	background-color: #ececec;
 }
 input:focus,
 textarea:focus {
 	background-color: khaki;
-	transition: .8s;
 	border: solid 2px tomato;
 }
 /* fix for default autocomplete input fields background colors found on https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/ */
