@@ -107,7 +107,8 @@ select {
 	border: none;
 	background-color: #ececec;
 }
-.top input {
+.top input,
+.top select {
 	transition: .8s;
 }
 textarea {
